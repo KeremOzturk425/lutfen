@@ -184,7 +184,10 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      tumanimasyon2_0: -2457728576015263870
+      tumanimasyon2_1: 3835680082463337361
+      tumanimasyon2_2: -5576459002995355155
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
