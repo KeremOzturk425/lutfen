@@ -25,12 +25,18 @@ public class CharContr : MonoBehaviour
         movement.x = Input.GetAxisRaw("Horizontal");
         movement.y = Input.GetAxisRaw("Vertical");
 
-        
+         if (Input.GetButtonDown("Fire1"))
+        {
+            Anim.SetTrigger("attack");
+                
+        }   
         
     }
 
     private void FixedUpdate()
     {
+
+        #region move
         rb.MovePosition(rb.position + movement * moveSpeed * Time.deltaTime);
 
 
@@ -50,11 +56,15 @@ public class CharContr : MonoBehaviour
             facingRight = !facingRight;
         }
 
-        else if(movement.x > 0 && !facingRight)
+        else if (movement.x > 0 && !facingRight)
         {
             flip();
             facingRight = !facingRight;
         }
+
+        #endregion
+    
+
     }
 
     void flip()
