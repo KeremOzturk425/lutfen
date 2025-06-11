@@ -130,8 +130,8 @@ GameObject:
   - component: {fileID: 168494922}
   - component: {fileID: 168494921}
   - component: {fileID: 168494925}
-  - component: {fileID: 168494924}
   - component: {fileID: 168494923}
+  - component: {fileID: 168494926}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -236,18 +236,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &168494924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 168494920}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b2535af88fd094f438f2374cb708711e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!95 &168494925
 Animator:
   serializedVersion: 7
@@ -270,6 +258,20 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &168494926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 168494920}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b2535af88fd094f438f2374cb708711e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  Anim: {fileID: 168494925}
 --- !u!1 &884665387
 GameObject:
   m_ObjectHideFlags: 0
